@@ -1,0 +1,194 @@
+:root {
+  --bg: #0d0f12;
+  --txt: #e3e3e3;
+  --accent: #61dafb;
+  --muted: #8b949e;
+  --about-bg: rgba(27,31,36,0.7);
+}
+html, body {
+  height: 100%;
+  margin: 0; padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--txt);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+}
+#matrix-bg {
+  position: fixed;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  background: transparent;
+  display: block;
+}
+.main-container {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 16px 24px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.avatar {
+  width: 120px; height: 120px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  margin-bottom: 18px;
+  background: #16181c;
+  object-fit: cover;
+  box-shadow: 0 2px 24px #2228;
+}
+.name {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--accent);
+  font-size: 2.6rem;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+.tagline {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-bottom: 16px;
+}
+.social-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 12px 0 28px 0;
+  justify-content: center;
+}
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #191d23ee;
+  color: var(--txt);
+  font-size: 1.6rem;
+  box-shadow: 0 1px 10px #13131344;
+  transition: background 0.18s, transform 0.18s, box-shadow 0.18s;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  position: relative;
+}
+.social-btn:hover {
+  background: var(--accent);
+  color: #0d0f12;
+  transform: translateY(-3px) scale(1.11);
+  box-shadow: 0 0 16px var(--accent);
+}
+.about-section {
+  width: 100%;
+  background: var(--about-bg);
+  border-radius: 9px;
+  margin: 18px 0;
+  padding: 1.4rem 1.2rem;
+  box-shadow: 0 2px 12px #070a1080;
+  max-width: 700px;
+  text-align: left;
+}
+.about-section h2 {
+  margin: 0 0 0.5em 0;
+  color: var(--accent);
+  font-size: 1.18rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+.about-section p {
+  margin: 0.3em 0 0 0;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--txt);
+}
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5em 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em 2em;
+  font-size: 1em;
+}
+.skills-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.55em;
+  background: rgba(40,50,60,0.60);
+  padding: 0.38em 0.8em;
+  border-radius: 6px;
+  box-shadow: 0 1px 6px #1114;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--txt);
+  font-size: 1.03em;
+}
+.skills-list i {
+  font-size: 1.22em;
+  color: var(--accent);
+}
+.github-list {
+  margin-top: 0.9em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.repo-item {
+  background: rgba(40, 45, 60, 0.73);
+  border-radius: 7px;
+  padding: 0.8em 1em;
+  box-shadow: 0 1px 7px #0004;
+  font-size: 1.04em;
+  transition: background 0.2s;
+}
+.repo-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.07em;
+}
+.repo-link:hover { text-decoration: underline; }
+.repo-desc {
+  font-size: 0.98em;
+  color: var(--txt);
+  margin-top: 0.13em;
+}
+footer {
+  margin: 3rem auto 0 auto;
+  padding: 1.5rem 0 0 0;
+  color: var(--muted);
+  font-size: 0.97rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .main-container { padding: 12px 3vw 18px 3vw;}
+  .about-section { padding: 1rem 0.7rem; }
+  .name { font-size: 2.0rem; }
+}
+
+.easteregg#visit-stats {
+  text-align: center;
+  margin-top: 1.2em;
+  opacity: 0.75;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1em;
+  color: var(--muted);
+}
+.easteregg#visit-stats b { color: var(--accent); font-weight: 600; }
