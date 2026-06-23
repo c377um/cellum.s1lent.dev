@@ -15,18 +15,26 @@ resize();
 window.addEventListener('resize', resize);
 
 function drawMatrix() {
-  ctx.fillStyle = "rgba(13,15,18,0.13)";
+  // etwas stärkeres Ausblenden => dezenterer, ruhigerer Effekt
+  ctx.fillStyle = "rgba(13,15,18,0.10)";
   ctx.fillRect(0, 0, width, height);
-  ctx.fillStyle = "#3ba866";
+  ctx.fillStyle = "rgba(59,168,102,0.55)";
   ctx.font = "15px JetBrains Mono, monospace";
   for (let i = 0; i < drops.length; i++) {
     let text = String.fromCharCode(0x30A0 + Math.random() * 96);
     ctx.fillText(text, i * 18, drops[i] * 18);
     drops[i]++;
-    if (drops[i] * 18 > height || Math.random() > 0.963) drops[i] = 0;
+    if (drops[i] * 18 > height || Math.random() > 0.975) drops[i] = 0;
   }
 }
-setInterval(drawMatrix, 44);
+
+// Animation nur starten, wenn der Nutzer keine reduzierte Bewegung wünscht
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+if (reduceMotion) {
+  canvas.style.display = "none";
+} else {
+  setInterval(drawMatrix, 70); // langsamer als zuvor (war 44 ms)
+}
 
 // --- GitHub-Projekte automatisch anzeigen ---
 fetch("https://api.github.com/users/c377um/repos?sort=updated&per_page=5")

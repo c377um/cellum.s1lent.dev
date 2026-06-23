@@ -4,90 +4,244 @@
   <meta charset="UTF-8">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cellum @ S1lent</title>
+  <title>Cellum @ S1lent — Fachinformatiker für Systemintegration (in Ausbildung)</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Cellum (c377um) – angehender Fachinformatiker für Systemintegration aus Baden-Württemberg. Eigener Linux-vServer, Self-Hosting, Netzwerk-Grundlagen, Automatisierung und eigene Projekte.">
+  <meta name="author" content="Cellum">
+  <meta name="theme-color" content="#0d0f12">
+
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cellum @ S1lent">
+  <meta property="og:description" content="Angehender Fachinformatiker für Systemintegration – eigener Linux-Server, Self-Hosting & eigene Projekte.">
+  <meta property="og:image" content="static/logo.png">
+  <meta property="og:url" content="https://cellum.dev/">
+  <meta name="twitter:card" content="summary">
+
   <!-- Fonts & Font Awesome -->
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="static/fontawesome/css/all.min.css"/>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="static/favicon.png">
 </head>
 <body>
-  <canvas id="matrix-bg"></canvas>
-  <div class="main-container">
-    <div class="hero">
-      <img src="static/logo.png" alt="Profilbild" class="avatar">
-      <div class="name">Cellum</div>
-      <div class="tagline">Gründer des Entwicklerteams S1lent</div>
-      <div class="social-row">
-        <a href="https://discord.com/users/620560074422747146" class="social-btn" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
-        <a href="https://www.youtube.com/@c377um" class="social-btn" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.instagram.com/c377um/" class="social-btn" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/cellum/" class="social-btn" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://x.com/c377um" class="social-btn" target="_blank" title="X (ehemals Twitter)"><i class="fab fa-x-twitter"></i></a>
-        <a href="https://www.tiktok.com/@c377um" class="social-btn" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
-        <a href="https://www.twitch.tv/C377UM" class="social-btn" target="_blank" title="Twitch"><i class="fab fa-twitch"></i></a>
-        <a href="https://github.com/c377um" class="social-btn" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+  <a class="skip-link" href="#content">Zum Inhalt springen</a>
+  <canvas id="matrix-bg" aria-hidden="true"></canvas>
+
+  <main class="main-container" id="content">
+    <header class="hero">
+      <img src="static/logo.png" alt="Profilbild von Cellum" class="avatar" width="120" height="120" loading="eager">
+      <h1 class="name">Cellum</h1>
+      <p class="tagline">Angehender <strong>Fachinformatiker für Systemintegration</strong></p>
+      <p class="subtagline">Gründer des Entwicklerteams S1lent</p>
+
+      <div class="badge-row" aria-hidden="true">
+        <span class="badge"><i class="fab fa-linux"></i> Linux</span>
+        <span class="badge"><i class="fas fa-server"></i> Server &amp; Self-Hosting</span>
+        <span class="badge"><i class="fas fa-network-wired"></i> Netzwerk-Grundlagen</span>
+        <span class="badge"><i class="fas fa-terminal"></i> Automatisierung</span>
       </div>
-    </div>
+
+      <nav class="social-row" aria-label="Soziale Profile">
+        <a href="https://discord.com/users/620560074422747146" class="social-btn" target="_blank" rel="noopener" aria-label="Discord" title="Discord"><i class="fab fa-discord"></i></a>
+        <a href="https://www.youtube.com/@c377um" class="social-btn" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/c377um/" class="social-btn" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/c377um" class="social-btn" target="_blank" rel="noopener" aria-label="X (ehemals Twitter)" title="X (ehemals Twitter)"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://www.tiktok.com/@c377um" class="social-btn" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.twitch.tv/C377UM" class="social-btn" target="_blank" rel="noopener" aria-label="Twitch" title="Twitch"><i class="fab fa-twitch"></i></a>
+        <a href="https://github.com/c377um" class="social-btn" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+      </nav>
+    </header>
 
     <section class="about-section">
-      <h2>Steckbrief</h2>
+      <h2><i class="fas fa-id-card"></i> Steckbrief</h2>
       <p>
-        <b>Name:</b> Cellum<br>
-        <b>Online auch als:</b> c377um<br>
-        <b>Region:</b> Baden-Württemberg<br>
-        <b>Schule:</b> 13. Klasse am Technischen Gymnasium (Abitur 2025/26 geplant)<br>
-        <b>Lieblingscharakter:</b> Lappland aus Arknights
+        <strong>Name:</strong> Cellum<br>
+        <strong>Online auch unter:</strong> c377um<br>
+        <strong>Region:</strong> Baden-Württemberg<br>
+        <strong>Aktuell:</strong> Technisches Gymnasium, Fachrichtung Informationstechnik (Abschluss 2026)<br>
+        <strong>Ziel:</strong> Ausbildung zum Fachinformatiker für Systemintegration<br>
+        <strong>Lieblingscharakter:</strong> <a href="https://lappland.moe" target="_blank" rel="noopener">Lappland aus Arknights</a>
       </p>
     </section>
 
     <section class="about-section">
-      <h2>Hobbys &amp; Projekte</h2>
+      <h2><i class="fas fa-user"></i> Über mich</h2>
       <p>
-        Technik und Software sind meine Welt.<br>
-        Besonders stolz bin ich darauf, meinen eigenen Minecraft-Server zu betreiben (natürlich mit selbst entwickelten Plugins)<br>
-        Am liebsten codiere ich in <b>Java</b> für Minecraft und automatisiere Aufgaben mit <b>Python</b>.<br>
-        Gaming und Technologie gehören für mich einfach dazu.
+        Technik ist für mich nicht nur Beruf, sondern Leidenschaft. Schon früh habe ich angefangen,
+        eigene Systeme aufzusetzen, Server zu betreiben und Abläufe zu automatisieren. Einfach, weil
+        es mich fasziniert, wie alles zusammenspielt.
+      </p>
+      <p>
+        Besonders reizt mich die <strong>Systemintegration</strong>: Hardware, Netzwerke, Server und
+        Software so zu verbinden, dass am Ende ein zuverlässiges, durchdachtes Gesamtsystem entsteht.
+        Ich tüftle gerne so lange, bis es läuft.
       </p>
     </section>
 
     <section class="about-section">
-      <h2>Skills</h2>
+      <h2><i class="fas fa-laptop-code"></i> Hobbys &amp; Projekte</h2>
+      <p>
+        Seit rund fünf Jahren betreibe ich einen eigenen <strong>Linux-vServer (KVM)</strong>, komplett
+        in Eigenregie (und dem S1lent Team) eingerichtet und gewartet. Darauf laufen meine <strong>Website</strong> (Apache2),
+        eine selbst gehostete <strong>Cloud</strong> und ein <strong>Minecraft-Gameserver Netzwerk</strong>, das
+        ich mit selbst entwickelten Java-Plugins erweitere.
+      </p>
+      <p>
+        Dabei kümmere ich mich um Einrichtung und Wartung von Diensten, Fehleranalyse über Logs
+        (z.&nbsp;B. <code>journalctl</code>) und Konfigurationen (yaml, json) sowie grundlegende
+        Absicherung (z.&nbsp;B. <code>ufw</code>). Wiederkehrende Aufgaben automatisiere ich am liebsten
+        mit <strong>Python</strong> und Shell-Skripten.
+      </p>
+    </section>
+
+    <section class="about-section">
+      <h2><i class="fas fa-screwdriver-wrench"></i> Skills</h2>
+      <p class="skills-intro">Schwerpunkt Systemintegration, plus solide Programmier-Grundlagen:</p>
+
+      <div class="skills-group">
+        <h3>Server &amp; Systeme</h3>
+        <ul class="skills-list">
+          <li><i class="fab fa-linux"></i> Linux-Administration &amp; Services</li>
+          <li><i class="fas fa-server"></i> KVM-vServer-Betrieb</li>
+          <li><i class="fas fa-screwdriver-wrench"></i> Einrichtung &amp; Wartung von Diensten</li>
+          <li><i class="fas fa-magnifying-glass"></i> Fehleranalyse (journalctl, Logs)</li>
+        </ul>
+      </div>
+
+      <div class="skills-group">
+        <h3>Netzwerk &amp; Sicherheit</h3>
+        <ul class="skills-list">
+          <li><i class="fas fa-network-wired"></i> Grundlagen Netzwerk &amp; Client-Server</li>
+          <li><i class="fas fa-shield-halved"></i> Firewall (ufw)</li>
+          <li><i class="fas fa-lock"></i> Grundlegende Sicherheits- &amp; Systemkonzepte</li>
+        </ul>
+      </div>
+
+      <div class="skills-group">
+        <h3>Cloud, Web &amp; Hosting</h3>
+        <ul class="skills-list">
+          <li><i class="fas fa-cloud"></i> Self-Hosting (eigene Cloud)</li>
+          <li><i class="fas fa-globe"></i> Apache2-Webserver &amp; Hosting</li>
+          <li><i class="fas fa-code"></i> HTML, CSS, PHP</li>
+        </ul>
+      </div>
+
+      <div class="skills-group">
+        <h3>Programmierung &amp; Automatisierung</h3>
+        <ul class="skills-list">
+          <li><i class="fab fa-python"></i> Python (Skripte &amp; Automatisierung)</li>
+          <li><i class="fab fa-java"></i> Java (Grundlagen &amp; Plugin-Entwicklung)</li>
+          <li><i class="fas fa-terminal"></i> Bash / Shell</li>
+          <li><i class="fab fa-js"></i> JavaScript (Grundlagen)</li>
+          <li><i class="fas fa-database"></i> PHP &amp; SQL (Grundlagen)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <h2><i class="fas fa-timeline"></i> Werdegang</h2>
+      <ol class="timeline">
+        <li>
+          <span class="timeline-date">seit ca. 5 Jahren</span>
+          <span class="timeline-title">Eigene IT-Projekte &amp; Linux-vServer</span>
+          <span class="timeline-desc">Aufbau und Betrieb eines eigenen KVM-Linux-vServers inkl. Website, Cloud und Gameserver mit selbst entwickelten Java-Plugins.</span>
+        </li>
+        <li>
+          <span class="timeline-date">März 2022</span>
+          <span class="timeline-title">Schülerpraktikum im IT-Bereich (Online-Shop)</span>
+          <span class="timeline-desc">Mitarbeit in Frontend- &amp; Backend-Entwicklung sowie organisatorischen Aufgaben.</span>
+        </li>
+        <li>
+          <span class="timeline-date">2023</span>
+          <span class="timeline-title">Realschulabschluss</span>
+          <span class="timeline-desc">Abschlussnote 2,9.</span>
+        </li>
+        <li>
+          <span class="timeline-date">seit 2023</span>
+          <span class="timeline-title">Technisches Gymnasium – Informationstechnik</span>
+          <span class="timeline-desc">Schwerpunkte Informatik, Mathematik und Physik. Abschluss 2026.</span>
+        </li>
+        <li class="timeline-current">
+          <span class="timeline-date">Ziel: ab 2026</span>
+          <span class="timeline-title">Ausbildung: Fachinformatiker für Systemintegration</span>
+          <span class="timeline-desc">Der nächste Schritt: Theorie und Praxis rund um IT-Infrastruktur.</span>
+        </li>
+      </ol>
+    </section>
+
+    <section class="about-section" id="homelab">
+      <h2><i class="fas fa-server"></i> Mein Server &amp; Self-Hosting</h2>
+      <p>
+        Mein eigener Server ist meine praktische Spielwiese für Systemintegration – hier lerne ich an
+        echten Diensten, worauf es im Betrieb ankommt: zuverlässig laufende Services, saubere
+        Konfiguration und grundlegende Sicherheit.
+      </p>
+      <div class="homelab-grid">
+        <div class="homelab-card">
+          <i class="fas fa-server"></i>
+          <h3>Server</h3>
+          <p>Eigener KVM-basierter Linux-vServer (root), selbst eingerichtet &amp; betrieben.</p>
+        </div>
+        <div class="homelab-card">
+          <i class="fas fa-globe"></i>
+          <h3>Dienste &amp; Hosting</h3>
+          <p>Apache2-Webhosting (cellum.dev), selbst gehostete Cloud und Minecraft-Gameserver.</p>
+        </div>
+        <div class="homelab-card">
+          <i class="fas fa-screwdriver-wrench"></i>
+          <h3>Betrieb &amp; Wartung</h3>
+          <p>Einrichtung &amp; Pflege von Services, Fehleranalyse via journalctl und Configs (yaml/json).</p>
+        </div>
+        <div class="homelab-card">
+          <i class="fas fa-shield-halved"></i>
+          <h3>Sicherheit</h3>
+          <p>Firewall (ufw) und grundlegende Sicherheits- &amp; Systemkonzepte.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <h2><i class="fas fa-bullseye"></i> Zukunft &amp; Ziele</h2>
+      <p>
+        Mein nächstes großes Ziel ist die <strong>Ausbildung zum Fachinformatiker für
+        Systemintegration</strong>. Ich möchte mein Hobbywissen auf ein professionelles Fundament
+        stellen und lernen, wie IT-Infrastruktur in der Praxis geplant, aufgebaut und betreut wird.
+      </p>
+      <p>
+        Langfristig will ich in der IT etwas bewegen, Systeme zuverlässig am Laufen halten, mich in
+        Richtung Netzwerk &amp; IT-Security weiterentwickeln und nie aufhören, Neues zu lernen.
+      </p>
+    </section>
+
+    <section class="about-section">
+      <h2><i class="fas fa-language"></i> Sprachen</h2>
       <ul class="skills-list">
-        <li><i class="fab fa-java"></i> Java (Minecraft-Plugins)</li>
-        <li><i class="fab fa-python"></i> Python (Skripting &amp; Automatisierung)</li>
-        <li><i class="fas fa-server"></i> Servermanagement (Linux, Minecraft)</li>
-        <li><i class="fas fa-cloud"></i> Cloud (nextcloud)</li>
-        <li><i class="fas fa-globe"></i> Webentwicklung (HTML, CSS, PHP, JS)</li>
-        <li><i class="fas fa-lock"></i> IT-Security Grundlagen</li>
+        <li><i class="fas fa-comment"></i> Deutsch – Muttersprache</li>
+        <li><i class="fas fa-comment"></i> Englisch – fließend (B2)</li>
+        <li><i class="fas fa-comment"></i> Französisch – Grundkenntnisse (A2+)</li>
       </ul>
     </section>
 
     <section class="about-section">
-      <h2>Zukunft &amp; Ziele</h2>
+      <h2><i class="fas fa-heart"></i> Politisches Engagement</h2>
       <p>
-        Nach dem Abitur möchte ich Informatik studieren.<br>
-        Mein Ziel ist es, später bei der Polizei im Bereich Cybercrime zu arbeiten.<br>
-        Ich will mich aktiv online gegen Verbrechen einsetzen und etwas bewirken.
-      </p>
-    </section>
-
-    <section class="about-section">
-      <h2>Politisches Engagement</h2>
-      <p>
-        Ich engagiere mich bei <b>Die Linke</b> und der <b>Linksjugend Solid</b>.<br>
-        Mein Herzensthema ist <b>soziale Gerechtigkeit</b> – digital und analog.<br>
+        Ich engagiere mich bei der Partei <b>Die Linke</b> und der <b>Linksjugend Solid</b>.<br>
+        Mein Herzensthema ist vor allem die <b>soziale Gerechtigkeit</b>.<br>
         Für faire Chancen und eine offene, solidarische Gesellschaft setze ich mich mit Leidenschaft ein.
       </p>
     </section>
 
     <section class="about-section" id="github-projects">
-      <h2>Meine letzten GitHub-Projekte</h2>
+      <h2><i class="fab fa-github"></i> Meine letzten GitHub-Projekte</h2>
       <div class="github-list">
         <div>Lädt Projekte...</div>
       </div>
-      <div style="margin-top:0.7em;font-size:0.97em;">
-        <a href="https://github.com/c377um" target="_blank" style="color:var(--accent);text-decoration:none;">
+      <div class="github-more">
+        <a href="https://github.com/c377um" target="_blank" rel="noopener">
           Weitere Projekte findest du direkt auf meinem GitHub-Profil
           <i class="fab fa-github"></i>
         </a>
@@ -95,30 +249,29 @@
     </section>
 
     <section class="about-section">
-      <h2>Kontakt</h2>
+      <h2><i class="fas fa-envelope"></i> Kontakt</h2>
       <p>
         Schreib mir gerne auf Discord:
-        <a href="https://discord.com/users/620560074422747146" target="_blank" style="color:var(--accent);text-decoration:none;">
+        <a href="https://discord.com/users/620560074422747146" target="_blank" rel="noopener" class="inline-link">
           <i class="fab fa-discord"></i> @c377um
+        </a>
+        <br>
+        oder per E-Mail:
+        <a href="mailto:contact@cellum.dev" class="inline-link">
+          <i class="fa fa-envelope"></i> contact@cellum.dev
         </a>
       </p>
     </section>
 
-    <section class="about-section" style="text-align:center;">
-    <em>
-        „A machine can do anything we can teach it to perform“<br>
-        <span style="font-size:0.93em;color:var(--muted);">– Alan Turing</span>
-    </em>
-    </section>
-
     <div class="easteregg" id="visit-stats">
-    Besucherstatistik lädt ...
+      Besucherstatistik lädt ...
     </div>
 
     <footer>
-      &copy; 2025 Cellum
+      &copy; 2026 Cellum · Made with <i class="fas fa-heart" style="color:#e25555"></i>
     </footer>
-  </div>
+  </main>
+
   <script src="script.js"></script>
 </body>
 </html>
